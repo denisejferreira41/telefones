@@ -1,2 +1,8 @@
 site_sw_proj/settings.py
-site_sw_proj/__pycache__
+# Django #
+*.log
+*.pot
+*.pyc
+*$py.class 
+__pycache__
+site_sw_proj/__pycache__/
