@@ -6,3 +6,4 @@ site_sw_proj/settings.py
 *$py.class 
 __pycache__
 site_sw_proj/__pycache__/
+telefones_venv/
