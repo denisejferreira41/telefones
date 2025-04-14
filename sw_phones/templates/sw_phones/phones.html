@@ -1,0 +1,56 @@
+{% extends "sw_phones/base.html" %}
+
+{% block content %}
+
+<table class="table table-success table-striped table-hover">
+    <thead>
+        <tr >
+          <th scope="col">#</th>
+          <th scope="col">IP</th>
+          <th scope="col">MAC</th>
+          <th scope="col">TOMBO</th>
+          <th scope="col">MODELO</th>
+          <th scope="col">RAMAL</th>
+          <th scope="col">NOME</th>
+          <th scope="col">SETOR</th>
+          <th scope="col">STATUS_SW</th>
+          <th scope="col">UP_SW</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for phone in phones %}
+        <tr>
+          <th scope="row"></th>
+          <td>{{phone.ip}}</td>
+          <td>{{phone.mac}}</td>
+          <td>{{phone.tombo}}</td>
+          <td>{{phone.modelo}}</td>
+          <td>{{phone.ramal}}</td>
+          <td>{{phone.nome}}</td>
+          <td>{{phone.setor}}</td>
+          <td>{{phone.switch_status}}</td>
+          <td>{{phone.switch_up_to}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+</table>
+
+<nav aria-label="...">
+    <ul class="pagination">
+      <li class="page-item disabled">
+        <a class="page-link">Previous</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item active" aria-current="page">
+        <a class="page-link" href="#">2</a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+
+
+
+{% endblock content %}
