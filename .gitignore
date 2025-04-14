@@ -1,6 +1,7 @@
 site_sw_proj/settings.py
 # Django #
 *.log
+manage.py
 *.pot
 *.pyc
 *$py.class 
